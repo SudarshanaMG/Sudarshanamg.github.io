@@ -32,3 +32,13 @@ ul {
   justify-content: space-between;
   align-items: center;
 }
+
+.profile-photo{
+  display: flex;
+  justify-content: right;
+}
+
+img {
+  position: relative;
+  width: 60px;
+}
