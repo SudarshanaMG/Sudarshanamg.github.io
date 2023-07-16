@@ -17,9 +17,9 @@
 }
 
 .dark-theme {
-  --bcg: #150534;
+  --bcg: #0a011b;
   --back: #3e3c3c;
-  --shadow: #070707;
+  --shadow: #000;
   --nav-bcg: #000;
   --text-color: #d7d3d3;
   --title-color: #fff;
@@ -114,6 +114,10 @@ nav img {
 .content {
   top: 0;
   left: 0;
+  max-width: 100%;
+}
+
+.content .text{
   background-color: var(--back);
   color: var(--title-color);
   max-width: 600px;
@@ -123,7 +127,7 @@ nav img {
   margin: 100px 450px;
 }
 
-.content h1 {
+.content .text h1 {
   font-size: 80px;
   font-family: serif;
   height: 150px;
@@ -131,18 +135,18 @@ nav img {
   margin-left: 20px;
 }
 
-.content h2 {
+.content .text h2 {
   font-size: 50px;
   margin-left: 20px;
 }
 
-.content p {
+.content .text p {
   padding-top: 10px;
   font-size: 20px;
   margin-left: 20px;
 }
 
-.content ul {
+.content .text ul {
   width:fit-content;
   list-style: none;
   margin: 30px 250px;
@@ -150,21 +154,27 @@ nav img {
   justify-content: center;
 }
 
-.content ul li a {
+.content .text ul li a {
   text-decoration: none;
   color: var(--text-color);
   font-weight: 500;
   transition: 0.5s;
 }
 
-.content ul li a:hover {
+.content .text ul li a:hover {
   text-decoration: underline;
   color: brown;
 }
 
 .content .social {
   position: absolute;
-  margin: 30px 250px;
+  left: 700px;
+  top: 625px;
+  max-width: 100%;
+  /* margin: 30px 250px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .content .social a {
@@ -182,4 +192,61 @@ nav img {
 .content .social a ion-icon:hover{
   transform:  scale(2.5);
   transform: translateY(-15);
+}
+
+.edu{
+  top: 0;
+  left: 0;
+  color: var(--title-color);
+  max-width: 100%;
+  height: 100%;
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+.edu h2{
+  margin: 10px 0;
+  height: 50px;
+  font-size: 50px;
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edu .ug{
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.edu .ug a{
+  text-decoration: none;
+  width: fit-content;
+  margin: 40px;
+  border-radius: 20px;
+  background-color: var(--back);
+  border : 0px solid var(--title-color);
+  box-shadow: 5px 5px 10px var(--shadow);
+  color: var(--title-color);
+  display: block;
+}
+
+.edu .ug a h3{
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  margin: 10px 10px;
+}
+
+.edu .ug a p{
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.edu .ug a img{
+  width: 100px;
+  margin: 10px 120px;
 }
