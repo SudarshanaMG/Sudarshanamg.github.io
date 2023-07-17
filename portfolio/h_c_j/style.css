@@ -18,6 +18,7 @@
 
 .dark-theme {
   --bcg: #0a011b;
+  /* --bcg: #030711; */
   --back: #3e3c3c;
   --shadow: #000;
   --nav-bcg: #000;
@@ -249,4 +250,56 @@ nav img {
 .edu .ug a img{
   width: 100px;
   margin: 10px 120px;
+}
+
+.project{
+  left: 0;
+  top: 0;
+}
+
+.project h2{
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.project .container-pro{
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.project .container-pro a{
+  text-decoration: none;
+  width: fit-content;
+  margin: 40px;
+  border-radius: 20px;
+  background-color: var(--back);
+  border : 0px solid var(--title-color);
+  box-shadow: 5px 5px 10px var(--shadow);
+  color: var(--title-color);
+  display: block;
+}
+
+.project .container-pro a h3{
+  font-size: 20px;
+  margin: 10px 20px;
+}
+
+.project .container-pro a p{
+  font-size: 15px;
+  margin: 5px 20px;
+}
+
+.project .container-pro a p1{
+  margin: 40px;
+}
+
+.project .container-pro a span.rounded-color{
+  margin: 10px 10px;
+  border-radius: 50%;
+  color: rgb(59, 51, 39);
+  background-color: rgb(59, 51, 39);
 }
