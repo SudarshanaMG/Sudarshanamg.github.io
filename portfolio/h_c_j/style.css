@@ -10,7 +10,9 @@
 :root {
   --bcg: #fff;
   --back: #e8e6d8;
+  --back1: #dadacb;
   --shadow: rgb(206, 201, 201);
+  --shadow1:rgba(0, 0, 0, 0.24);
   --nav-bcg: #c6d7e6;
   --text-color: #212020;
   --title-color: #000;
@@ -20,7 +22,9 @@
   --bcg: #0a011b;
   /* --bcg: #030711; */
   --back: #3e3c3c;
+  --back1: #3e3c3c;
   --shadow: #000;
+  --shadow1:rgba(0, 0, 0, 0.24);
   --nav-bcg: #000;
   --text-color: #d7d3d3;
   --title-color: #fff;
@@ -126,6 +130,11 @@ nav img {
   border : 0 inset lightblue;
   box-shadow: 10px 10px 20px var(--shadow);
   margin: 100px 450px;
+  transition: 0.5s;
+}
+
+.content .text:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .content .text h1 {
@@ -188,6 +197,7 @@ nav img {
 .content .social a ion-icon{
   color: var(--title-color);
   transform: scale(1.5);
+  transition: 0.3s;
 }
 
 .content .social a ion-icon:hover{
@@ -232,6 +242,11 @@ nav img {
   box-shadow: 5px 5px 10px var(--shadow);
   color: var(--title-color);
   display: block;
+  transition: 0.5s;
+}
+
+.edu .ug a:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .edu .ug a h3{
@@ -278,9 +293,15 @@ nav img {
   border-radius: 20px;
   background-color: var(--back);
   border : 0px solid var(--title-color);
-  box-shadow: 5px 5px 10px var(--shadow);
+  box-shadow: 0px 3px 8px var(--shadow1);
   color: var(--title-color);
   display: block;
+  transition: 0.5s;
+}
+
+.project .container-pro a:hover{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  background-color: var(--back1);
 }
 
 .project .container-pro a h3{
@@ -294,12 +315,13 @@ nav img {
 }
 
 .project .container-pro a p1{
-  margin: 40px;
+  margin: 20px;
 }
 
 .project .container-pro a span.rounded-color{
   margin: 10px 10px;
   border-radius: 50%;
-  color: rgb(59, 51, 39);
-  background-color: rgb(59, 51, 39);
+  background-color: #555555; 
+  color: #555555;
 }
+
