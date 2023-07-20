@@ -12,7 +12,7 @@
   --back: #e8e6d8;
   --back1: #dadacb;
   --shadow: rgb(206, 201, 201);
-  --shadow1:rgba(0, 0, 0, 0.24);
+  --shadow1: rgba(0, 0, 0, 0.24);
   --nav-bcg: #c6d7e6;
   --text-color: #212020;
   --title-color: #000;
@@ -24,7 +24,7 @@
   --back: #3e3c3c;
   --back1: #3e3c3c;
   --shadow: #000;
-  --shadow1:rgba(0, 0, 0, 0.24);
+  --shadow1: rgba(0, 0, 0, 0.24);
   --nav-bcg: #000;
   --text-color: #d7d3d3;
   --title-color: #fff;
@@ -56,23 +56,26 @@ body {
   font-size: 30px;
   font-family: serif;
   margin: 20px;
-  margin-left: 50px;
   padding: 5px;
 }
 
 nav {
   display: flex;
   align-items: center;
+  flex-direction: row;
   justify-content: space-between;
   padding: 10px 0;
 }
 
 nav ul {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: right;
   list-style: none;
   margin-right: 50px;
-  margin-left: 600px;
+  margin-left: 700px;
 }
 
 nav ul li {
@@ -112,7 +115,7 @@ nav ul li a:hover {
 nav img {
   position: relative;
   width: 100px;
-  margin-left: 100px;
+  margin-left: 30px;
   border-radius: 5px;
 }
 
@@ -127,17 +130,17 @@ nav img {
   justify-content: center;
 }
 
-.content .text{
+.content .text {
   background-color: var(--back);
   color: var(--title-color);
   width: fit-content;
   border-radius: 30px;
-  border : 0 inset lightblue;
+  border: 0 inset lightblue;
   box-shadow: 10px 10px 20px var(--shadow);
   transition: 0.5s;
 }
 
-.content .text:hover{
+.content .text:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -161,7 +164,7 @@ nav img {
 }
 
 .content .text ul {
-  width:fit-content;
+  width: fit-content;
   list-style: none;
   margin: 30px 250px;
   display: flex;
@@ -194,18 +197,18 @@ nav img {
   transition: 0.5s;
 }
 
-.content .social a ion-icon{
+.content .social a ion-icon {
   color: var(--title-color);
   transform: scale(1.5);
   transition: 0.3s;
 }
 
-.content .social a ion-icon:hover{
-  transform:  scale(2.5);
+.content .social a ion-icon:hover {
+  transform: scale(2.5);
   transform: translateY(-15);
 }
 
-.edu{
+.edu {
   top: 0;
   left: 0;
   color: var(--title-color);
@@ -215,7 +218,7 @@ nav img {
   justify-content: space-between; */
 }
 
-.edu h2{
+.edu h2 {
   margin: 10px 0;
   height: 50px;
   font-size: 50px;
@@ -225,61 +228,62 @@ nav img {
   align-items: center;
 }
 
-.edu .ug{
+.edu .ug {
   width: 100%;
   margin-top: 100px;
   display: flex;
   justify-content: center;
 }
 
-.edu .ug a{
+.edu .ug a {
   text-decoration: none;
   width: fit-content;
   margin: 40px;
   border-radius: 20px;
   background-color: var(--back);
-  border : 0px solid var(--title-color);
+  border: 0px solid var(--title-color);
   box-shadow: 5px 5px 10px var(--shadow);
   color: var(--title-color);
   display: block;
   transition: 0.5s;
 }
 
-.edu .ug a:hover{
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+.edu .ug a:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-.edu .ug a h3{
+.edu .ug a h3 {
   display: flex;
   justify-content: center;
   font-size: 40px;
   margin: 10px 10px;
 }
 
-.edu .ug a p{
+.edu .ug a p {
   display: flex;
   justify-content: center;
   font-size: 20px;
 }
 
-.edu .ug a img{
+.edu .ug a img {
   width: 100px;
   margin: 10px 120px;
 }
 
-.project{
+.project {
   left: 0;
   top: 0;
 }
 
-.project h2{
+.project h2 {
   font-weight: normal;
   display: flex;
   justify-content: center;
   padding: 20px 0;
 }
 
-.project .container-pro{
+.project .container-pro {
   width: 100%;
   margin-top: 20px;
   display: flex;
@@ -288,63 +292,107 @@ nav img {
   transition: 1s;
 }
 
-.project .container-pro a{
+.project .container-pro a {
   text-decoration: none;
   width: fit-content;
   margin: 40px;
   border-radius: 20px;
   background-color: var(--back);
-  border : 0px solid var(--title-color);
+  border: 0px solid var(--title-color);
   box-shadow: 0px 3px 8px var(--shadow1);
   color: var(--title-color);
   display: block;
   transition: 0.5s;
 }
 
-.project .container-pro a:hover{
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+.project .container-pro a:hover {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   background-color: var(--back1);
 }
 
-.project .container-pro a h3{
+.project .container-pro a h3 {
   font-size: 20px;
   margin: 10px 20px;
 }
 
-.project .container-pro a p{
+.project .container-pro a p {
   font-size: 15px;
   margin: 5px 20px;
 }
 
-.project .container-pro a p1{
+.project .container-pro a p1 {
   margin: 20px;
 }
 
-.project .container-pro a span.rounded-color{
+.project .container-pro a span.rounded-color {
   margin: 10px 10px;
   border-radius: 50%;
-  background-color: #555555; 
+  background-color: #555555;
   color: #555555;
 }
 
-.html{
-  margin-left: 20px; 
-  color: #E34C26;
+.html {
+  margin-left: 20px;
+  color: #e34c26;
 }
-.css{
-  margin-left: 20px; 
-  color: #563D7C;
+.css {
+  margin-left: 20px;
+  color: #563d7c;
 }
-.js{
-  margin-left: 20px; 
-  color: #83750b
+.js {
+  margin-left: 20px;
+  color: #83750b;
 }
 
-@media(max-width: 991px){
-  .content .text{
-    margin: 0;
-  }
-  .project .container-pro{
-    flex-direction: column;
+@media (max-width: 1480px) {
+  nav ul {
+    margin-left: 400px;
   }
 }
+
+@media (max-width: 1200px) {
+  .project .container-pro {
+    flex-direction: column;
+  }
+  nav ul {
+    margin-left: 300px;
+  }
+  .name {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 1090px) {
+  nav ul {
+    margin-left: 250px;
+    margin-right: 10px;
+  }
+  .toggle-btn {
+    width: 200px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  nav ul {
+    flex-direction: column;
+    width: 100px;
+    margin-left: 320px;
+  }
+  .toggle-btn {
+    width: 100px;
+    height: 40px;
+  }
+}
+
+/* @media (max-width: 810px) {
+  nav ul {
+    width: 100px;
+    margin-left: 320px;
+  }
+  .toggle-btn {
+    width: 100px;
+    height: 40px;
+  } */
+
