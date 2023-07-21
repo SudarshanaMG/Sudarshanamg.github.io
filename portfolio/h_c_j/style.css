@@ -32,7 +32,7 @@
 
 body {
   background-color: var(--bcg);
-  transition: background 0.8s, color 0.8s;
+  transition: background 0.8s, color 0.8s, flex 0.8s;
 }
 
 .header {
@@ -134,7 +134,7 @@ nav img {
 .content .text {
   background-color: var(--back);
   color: var(--title-color);
-  width: fit-content; 
+  width: fit-content;
   border-radius: 30px;
   border: 0 inset lightblue;
   box-shadow: 10px 10px 20px var(--shadow);
@@ -233,7 +233,9 @@ nav img {
   width: 100%;
   margin-top: 100px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
 .edu .ug a {
@@ -258,15 +260,17 @@ nav img {
 }
 
 .edu .ug a h3 {
-  /* display: flex;
-  justify-content: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 30px;
   margin: 10px 10px;
 }
 
 .edu .ug a p {
-  /* display: flex;
-  justify-content: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 20px;
   margin: 10px 10px;
 }
@@ -293,6 +297,7 @@ nav img {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   transition: 1s;
 }
 
@@ -327,25 +332,30 @@ nav img {
 
 .project .container-pro a p1 {
   margin: 20px;
+  font-size: 15px;
 }
 
 .project .container-pro a span.rounded-color {
   margin: 10px 10px;
   border-radius: 50%;
+  font-size: 5px;
   background-color: #555555;
   color: #555555;
 }
 
 .html {
   margin-left: 20px;
+  font-size: 15px;
   color: #e34c26;
 }
 .css {
   margin-left: 20px;
+  font-size: 15px;
   color: #563d7c;
 }
 .js {
   margin-left: 20px;
+  font-size: 15px;
   color: #83750b;
 }
 
@@ -365,11 +375,14 @@ nav img {
   .name {
     margin: 5px;
   }
+  .edu .ug {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 1090px) {
   nav ul {
-    margin-left: 250px;
+    margin-left: 300px;
     margin-right: 10px;
   }
   .toggle-btn {
@@ -412,12 +425,12 @@ nav img {
     height: 100px;
     margin-left: 10px;
   }
-  
+
   .content .text h2 {
     font-size: 30px;
     margin-left: 10px;
   }
-  
+
   .content .text p {
     padding-top: 5px;
     font-size: 10px;
@@ -427,7 +440,42 @@ nav img {
     margin: 30px 150px;
     font-size: 10px;
   }
+  .edu h2 {
+    font-size: 30px;
+    height: 20px;
+  }
+  .edu .ug {
+    margin-top: 50px;
+  }
+  .edu .ug a h3 {
+    font-size: 20px;
+  }
+  .edu .ug a p {
+    font-size: 10px;
+  }
+  .edu .ug a img {
+    width: 75px;
+  }
+  .project .container-pro a h3 {
+    font-size: 15px;
+  }
+  .project .container-pro a p {
+    font-size: 10px;
+  }
+  .project .container-pro a p1 {
+    font-size: 10px;
+  }
+  .html,
+  .css,
+  .js {
+    font-size: 10px;
+  }
+  .project .container-pro a {
+    display: flex;
+    flex-direction: column;
+  }
 }
+
 @media (max-width: 420px) {
   .name {
     font-size: 15px;
@@ -453,7 +501,7 @@ nav img {
     border-radius: 5px;
   }
 }
-@media (max-width: 360px){
+@media (max-width: 360px) {
   .name {
     font-size: 10px;
     margin: 1px;
@@ -469,17 +517,20 @@ nav img {
     margin-left: 10px;
     border-radius: 5px;
   }
+  .content .text {
+    border-radius: 15px;
+  }
   .content .text h1 {
     font-size: 30px;
     height: 50px;
     margin-left: 10px;
   }
-  
+
   .content .text h2 {
     font-size: 15px;
     margin-left: 10px;
   }
-  
+
   .content .text p {
     padding-top: 5px;
     font-size: 5px;
@@ -495,6 +546,23 @@ nav img {
   }
   .content .social a ion-icon {
     transform: scale(1);
-    transition: 0.3s;
+  }
+  .project .container-pro a h3 {
+    font-size: 10px;
+  }
+  .project .container-pro a p {
+    font-size: 5px;
+  }
+  .project .container-pro a p1 {
+    font-size: 5px;
+  }
+  .html,
+  .css,
+  .js {
+    font-size: 5px;
+  }
+  .project .container-pro a {
+    margin: 40px;
+    border-radius: 10px;
   }
 }
