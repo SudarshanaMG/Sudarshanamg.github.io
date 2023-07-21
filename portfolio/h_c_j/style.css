@@ -402,6 +402,7 @@ nav img {
     height: 40px;
   }
 }
+
 @media (max-width: 600px) {
   .name {
     font-size: 20px;
@@ -445,7 +446,7 @@ nav img {
     height: 20px;
   }
   .edu .ug {
-    margin-top: 50px;
+    margin-top: 45px;
   }
   .edu .ug a h3 {
     font-size: 20px;
@@ -476,7 +477,7 @@ nav img {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 430px) {
   .name {
     font-size: 15px;
     margin: 1px;
