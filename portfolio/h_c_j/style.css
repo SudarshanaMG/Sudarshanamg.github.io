@@ -502,6 +502,7 @@ nav img {
     border-radius: 5px;
   }
 }
+
 @media (max-width: 360px) {
   .name {
     font-size: 10px;
@@ -517,6 +518,9 @@ nav img {
     width: 40px;
     margin-left: 10px;
     border-radius: 5px;
+  }
+  .edu .ug a h3 {
+    font-size: 15px;
   }
   .content .text {
     border-radius: 15px;
