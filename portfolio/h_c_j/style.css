@@ -39,7 +39,7 @@ body {
   background-color: var(--nav-bcg);
   color: var(--title-color);
   min-height: 100px;
-  width: 100%;
+  max-width: 100%;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -51,6 +51,7 @@ body {
   display: flex;
   position: absolute;
   align-items: center;
+  width: fit-content;
   color: var(--title-color);
   text-decoration: none;
   font-size: 30px;
@@ -133,7 +134,7 @@ nav img {
 .content .text {
   background-color: var(--back);
   color: var(--title-color);
-  width: fit-content;
+  width: fit-content; 
   border-radius: 30px;
   border: 0 inset lightblue;
   box-shadow: 10px 10px 20px var(--shadow);
@@ -272,7 +273,6 @@ nav img {
 
 .edu .ug a img {
   width: 100px;
-  
 }
 
 .project {
@@ -351,7 +351,7 @@ nav img {
 
 @media (max-width: 1480px) {
   nav ul {
-    margin-left: 400px;
+    margin-left: 450px;
   }
 }
 
@@ -360,7 +360,7 @@ nav img {
     flex-direction: column;
   }
   nav ul {
-    margin-left: 300px;
+    margin-left: 350px;
   }
   .name {
     margin: 5px;
@@ -389,14 +389,112 @@ nav img {
     height: 40px;
   }
 }
-
-/* @media (max-width: 810px) {
+@media (max-width: 600px) {
+  .name {
+    font-size: 20px;
+    margin: 3px;
+  }
   nav ul {
     width: 100px;
-    margin-left: 320px;
+    margin-left: 220px;
   }
   .toggle-btn {
-    width: 100px;
-    height: 40px;
-  } */
-
+    width: 60px;
+    height: 20px;
+    font-size: 10px;
+  }
+  .toggle-btn img {
+    height: 10px;
+    width: 10px;
+  }
+  .content .text h1 {
+    font-size: 50px;
+    height: 100px;
+    margin-left: 10px;
+  }
+  
+  .content .text h2 {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  
+  .content .text p {
+    padding-top: 5px;
+    font-size: 10px;
+    margin-left: 10px;
+  }
+  .content .text ul {
+    margin: 30px 150px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 420px) {
+  .name {
+    font-size: 15px;
+    margin: 1px;
+  }
+  nav ul {
+    width: 80px;
+    margin-left: 150px;
+    font-size: 10px;
+  }
+  .toggle-btn {
+    width: 50px;
+    height: 20px;
+    font-size: 5px;
+  }
+  .toggle-btn img {
+    margin-left: 5px;
+  }
+  nav img {
+    position: relative;
+    width: 60px;
+    margin-left: 20px;
+    border-radius: 5px;
+  }
+}
+@media (max-width: 360px){
+  .name {
+    font-size: 10px;
+    margin: 1px;
+  }
+  nav ul {
+    width: 60px;
+    margin-left: 120px;
+    font-size: 5px;
+  }
+  nav img {
+    position: relative;
+    width: 40px;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+  .content .text h1 {
+    font-size: 30px;
+    height: 50px;
+    margin-left: 10px;
+  }
+  
+  .content .text h2 {
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  
+  .content .text p {
+    padding-top: 5px;
+    font-size: 5px;
+    margin-left: 10px;
+  }
+  .content .text ul {
+    margin: 10px 100px;
+    font-size: 5px;
+  }
+  .content .social a {
+    margin: 30px 5px;
+    padding: 5px;
+  }
+  .content .social a ion-icon {
+    transform: scale(1);
+    transition: 0.3s;
+  }
+}
