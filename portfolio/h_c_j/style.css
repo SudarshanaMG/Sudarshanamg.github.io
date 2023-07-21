@@ -244,7 +244,10 @@ nav img {
   border: 0px solid var(--title-color);
   box-shadow: 5px 5px 10px var(--shadow);
   color: var(--title-color);
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   transition: 0.5s;
 }
 
@@ -254,21 +257,22 @@ nav img {
 }
 
 .edu .ug a h3 {
-  display: flex;
-  justify-content: center;
-  font-size: 40px;
+  /* display: flex;
+  justify-content: center; */
+  font-size: 30px;
   margin: 10px 10px;
 }
 
 .edu .ug a p {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   font-size: 20px;
+  margin: 10px 10px;
 }
 
 .edu .ug a img {
   width: 100px;
-  margin: 10px 120px;
+  
 }
 
 .project {
