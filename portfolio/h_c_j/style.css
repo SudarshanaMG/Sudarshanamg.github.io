@@ -117,7 +117,7 @@ nav img {
   position: relative;
   width: 100px;
   margin-left: 30px;
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 
 .content {
@@ -505,7 +505,6 @@ nav img {
     position: relative;
     width: 60px;
     margin-left: 20px;
-    border-radius: 5px;
   }
 }
 
@@ -523,7 +522,6 @@ nav img {
     position: relative;
     width: 40px;
     margin-left: 10px;
-    border-radius: 5px;
   }
   .edu .ug a h3 {
     font-size: 15px;
